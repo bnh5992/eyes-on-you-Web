@@ -1,18 +1,29 @@
-import React, {Component, useState} from "react";
+import React, { useState } from "react";
 import SideBar from "./SideBar";
 import TopBar from "./TopBar";
-import './ClassRoom.css'
+import './ClassRoom.css';
 import FileUploader from "./FileUploader";
+import SideList from "./SideList";
 
 const ClassRoom = () => {
+    const [files, setFiles] = useState([]);
+
     return (
         <div className="class-room">
             <TopBar/>
             <div className="main-contents">
                 <SideBar/>
-                <FileUploader/>
+                <div className="content-form">
+                    <div className="source-form">
+                        <FileUploader files={files} />
+                    </div>
+                    <div className="side-list">
+                        <SideList setFiles={setFiles} files={files} />
+                    </div>
+                </div>
             </div>
         </div>
     );
-}
-export default ClassRoom
+};
+
+export default ClassRoom;

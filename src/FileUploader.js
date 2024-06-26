@@ -1,29 +1,18 @@
-import React, { useState } from 'react';
-import './FileUploader.css';
+import React from 'react';
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
-const FileUploader = () => {
-    const [selectedDocs, setSelectedDocs] = useState([]);
-
+const FileUploader = ({ files = [] }) => {
     return (
-        <>
-            <input
-                type="file"
-                accept=".pdf"
-                multiple
-                onChange={(el) =>
-                    el.target.files?.length &&
-                    setSelectedDocs(Array.from(el.target.files))
-                }
-            />
+        <div className="file-uploader">
             <DocViewer
-                documents={selectedDocs.map((file) => ({
+                documents={files.map((file) => ({
                     uri: window.URL.createObjectURL(file),
                     fileName: file.name,
                 }))}
                 pluginRenderers={DocViewerRenderers}
             />
-        </>
+
+        </div>
     );
 };
 
