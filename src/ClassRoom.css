@@ -7,11 +7,16 @@
 .class-room{
     width: 1920px;
     height: 1080px;
+    background-color: #EFEFEF;
 }
 .main-contents{
-    width: 100%;
+    width: calc(100% - 100px);
     height: 980px;
     display: flex;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-left: 100px;
 }
 .content-form{
     width: 1820px;
@@ -19,8 +24,9 @@
     display: flex;
 }
 .source-form{
-    width: 70%;
+    width:calc(70% + 20px);
     height: 100%;
+
 }
 .side-list{
     width: 30%;

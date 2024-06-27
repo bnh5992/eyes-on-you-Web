@@ -1,13 +1,24 @@
 import {Link} from "react-router-dom";
-import { FiBookOpen } from "react-icons/fi";
+import { BsBook,BsChat,BsHouse,BsBarChart} from "react-icons/bs";
 import './SideBar.css'
 const SideBar = ()=>{
 
     return(
         <section className="sidebar">
-            <Link to="/classroom">
-                <FiBookOpen/>
+            <Link to="/">
+                <BsHouse size={48}/>
             </Link>
+            <Link to="/">
+                <BsBarChart size={48}/>
+            </Link>
+            <Link to="/classroom">
+                <BsChat size={48}/>
+            </Link>
+            <Link to="/classroom">
+                <BsBook size={48}/>
+            </Link>
+
+
         </section>
     )
 

@@ -1,13 +1,16 @@
-.side-list-form {
+.side-list > side-list-form {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    width: 100%;
+
 }
 
 .button-area {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content:space-around;
-    background-color: #f5f5f5;
 }
 
 .content-area {
@@ -42,6 +45,6 @@
 }
 
 .custom-button:hover {
-    background-color: red;
-    color: white;
+    background-color: #F6EFFF;
+    color: #6300EE;
 }

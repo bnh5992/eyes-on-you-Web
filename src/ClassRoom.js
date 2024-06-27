@@ -11,8 +11,8 @@ const ClassRoom = () => {
     return (
         <div className="class-room">
             <TopBar/>
+            <SideBar/>
             <div className="main-contents">
-                <SideBar/>
                 <div className="content-form">
                     <div className="source-form">
                         <FileUploader files={files} />
