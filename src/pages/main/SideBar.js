@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import { BsBook,BsChat,BsHouse,BsBarChart} from "react-icons/bs";
-import './SideBar.css'
+import './css/SideBar.css'
 const SideBar = ()=>{
 
     return(

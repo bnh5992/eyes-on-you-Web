@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import SideBar from "./SideBar";
-import TopBar from "./TopBar";
-import './ClassRoom.css';
+import SideBar from "../main/SideBar";
+import TopBar from "../main/TopBar";
+import './css/ClassRoom.css';
 import FileUploader from "./FileUploader";
 import SideList from "./SideList";
 

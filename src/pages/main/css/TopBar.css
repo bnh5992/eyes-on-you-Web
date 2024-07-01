@@ -28,7 +28,7 @@
 }
 
 .top-bar-account-btn {
-    background-image: url("../src/image/top-bar-profile.png");
+    background-image: url("/public/top-bar-profile.png");
 
 }
 .top-bar-notice-btn {

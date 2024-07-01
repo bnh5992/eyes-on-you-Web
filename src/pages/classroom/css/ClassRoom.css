@@ -3,10 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .class-room{
-    width: 1920px;
-    height: 1080px;
+    width: 100vw;
+    height: 100vh;
     background-color: #EFEFEF;
 }
 .main-contents{
@@ -17,10 +16,11 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     margin-left: 100px;
+    margin-top: 20px;
 }
 .content-form{
-    width: 1820px;
-    height: 800px;
+    width: calc(100vw - 100px);
+    height: calc(100vh - 280px);
     display: flex;
 }
 .source-form{

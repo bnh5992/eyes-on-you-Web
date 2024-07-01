@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import StudentCard from "./StudentCard";
-import './SideList.css';
+import './css/SideList.css';
 
 const SideList = ({ setFiles, files }) => {
     const [view, setView] = useState('students');
     const students = [
-        { name: 'Student 1' },
-        { name: 'Student 2' },
-        { name: 'Student 3' },
+        { name: 'Student 1' , profile:'./image/top-bar-profile.png'},
+        { name: 'Student 2' ,profile:'./src/image/top-bar-profile.png'},
+        { name: 'Student 3' ,profile:'./src/image/top-bar-profile.png'},
     ];
 
     return (

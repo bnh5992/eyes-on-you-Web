@@ -19,6 +19,7 @@
 }
 
 .student-card {
+    width: auto;
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
@@ -32,7 +33,7 @@
     margin: 5px 0;
 }
 .custom-button {
-    width: 150px;
+    width: 45%;
     height: 50px;
     border-radius: 10px;
     border: none;
@@ -48,3 +49,4 @@
     background-color: #F6EFFF;
     color: #6300EE;
 }
+
