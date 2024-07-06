@@ -223,7 +223,7 @@ const SfuStream = () => {
         useEffect(() => {
                 console.log("호출")
             if(isEnter){
-                ws.current = new WebSocket('wss://0.tcp.jp.ngrok.io:18332/signal');
+                ws.current = new WebSocket('wss://9d8a-114-202-187-162.ngrok-free.app/signal');
                 ws.current.onopen = () => {
                     register();
                 };
@@ -298,7 +298,7 @@ const SfuStream = () => {
     async function postUser() {
         try {
             // POST 요청은 body에 실어 보냄
-            await axios.post('http/chat/createroom', {
+            await axios.post('https://9d8a-114-202-187-162.ngrok-free.app', {
                 name: 'bang',
                 maxUserCnt: '8',
                 chatType: 'video',
