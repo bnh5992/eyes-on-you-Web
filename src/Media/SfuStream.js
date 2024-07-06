@@ -298,7 +298,7 @@ const SfuStream = () => {
     async function postUser() {
         try {
             // POST 요청은 body에 실어 보냄
-            await axios.post('https://9d8a-114-202-187-162.ngrok-free.app', {
+            await axios.post('https://9d8a-114-202-187-162.ngrok-free.app/chat/createroom', {
                 name: 'bang',
                 maxUserCnt: '8',
                 chatType: 'video',
