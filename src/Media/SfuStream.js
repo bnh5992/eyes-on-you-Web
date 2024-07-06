@@ -337,6 +337,7 @@ const SfuStream = () => {
 
         return (
             <div>
+                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
                 <div>
                 <button onClick={postUser}>방 생성</button>
                 <button onClick={change}>이름 변경</button>
