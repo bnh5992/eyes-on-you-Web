@@ -223,7 +223,7 @@ const SfuStream = () => {
         useEffect(() => {
                 console.log("호출")
             if(isEnter){
-                ws.current = new WebSocket('wss://0.tcp.jp.ngrok.io:16699/signal');
+                ws.current = new WebSocket('ws://0.tcp.jp.ngrok.io:16699/signal');
                 ws.current.onopen = () => {
                     register();
                 };
